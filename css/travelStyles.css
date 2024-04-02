@@ -1,0 +1,75 @@
+
+
+/* Board & pieces styles */
+
+rect.board  {stroke-width:1 ; stroke:blue ; fill:blue ;}
+
+circle.invisible {visibility:hidden ; stroke-width:1 ; stroke:white ; fill:white ;}
+circle.empty {stroke-width:1 ; stroke:white ; fill:white ;}
+circle.player-1 {stroke-width:1 ; stroke:yellow ; fill:yellow ;}
+circle.player-2 {stroke-width:1 ; stroke:red ;fill:red ;}
+
+
+/* General text  */
+p {color:black ;  font-family:verdana; font-size:12px; text-align:left}
+
+
+/* Top heading */
+p.connect4Heading {
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    overflow:hidden;
+    padding:10px;
+	margin-top:0px;
+}
+
+/* Descripption of how to play */
+p.connect4Description {
+    text-align:left;
+    font-size:12px;
+    color:black;
+}
+
+/* Text describing status of the game */
+p.gameProgressText {
+    text-align:left;
+    font-size:14px;
+    color:red;
+}
+
+
+
+
+/* Div Styles  */
+
+/* Whole app */
+div.app {
+    position:absolute;            
+    left:5%;
+    /*right:5%;
+    top:3%;  */
+}
+
+/* heading - contains the title */
+div.headingDiv {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1010px;
+	height:40px;
+	height:40px;
+	background-color:black
+}
+
+/* board - contains the board and the pieces  */
+div.boardDiv {
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:1050px;
+}
+
+
+
