@@ -15,7 +15,10 @@ function countryClicked(country) {
         var tripImage1 = document.getElementById("tripImage-1");
         tripImage1.setAttribute("src", "images/Iceland1.jpg");
     }
-    
+    if (country=="Croatia") {
+        var tripImage1 = document.getElementById("tripImage-1");
+        tripImage1.setAttribute("src", "images/arrow.png");
+    }
     
 }
 
