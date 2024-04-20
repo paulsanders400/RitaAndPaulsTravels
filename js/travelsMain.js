@@ -6,20 +6,24 @@
 
 // Country clicked
 function countryClicked(country) {
-
-    if (country=="US") {
-        var tripImage1 = document.getElementById("tripImage-1");
-        tripImage1.setAttribute("src", "images/arrow.png");
-    }
-    if (country=="Iceland") {
-        var tripImage1 = document.getElementById("tripImage-1");
-        tripImage1.setAttribute("src", "images/Iceland1.jpg");
-    }
-    if (country=="Croatia") {
-        var tripImage1 = document.getElementById("tripImage-1");
-        tripImage1.setAttribute("src", "images/arrow.png");
-    }
     
+    var tripImage
+    var imageElementId 
+    var imageName
+
+    for (let i = 0; i < 6; i++) {
+
+        tileElementId = "tile-" + i.toString()
+        imageElementId = "tripImage-" + i.toString()       
+        imageName = "images//" + country + i.toString() + ".jpg"
+        
+
+        tripImage = document.getElementById(imageElementId);
+        tripImage.setAttribute("src", imageName);
+        tile = document.getElementById(tileElementId);   
+        tile.style.visibility = "visible";
+    }
+             
 }
 
 
